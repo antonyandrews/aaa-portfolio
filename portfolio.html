@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='target' content='all'>
+    <meta name='rating' content='General'>
+    <meta name='coverage' content='Worldwide'>
+    <meta name='MobileOptimized' content='320'>
+    <meta name='distribution' content='Global'>
+    <!-- <meta name='HandheldFriendly' content='True'> -->
+    <meta http-equiv='Cache-Control' content='no-cache'>
+    <meta name='reply-to' content='antonyandrus@gmail.com'>
+    <meta name="description" content="This is my portfolio.">
+    <meta property="og:title" content="Antony Andrus Portfolio">
+    <meta property="og:image" content="./assets/images/prof_img.jpg">
+    <meta name="keywords" content="html, meta, tags, web development">
+    <meta name="author" content="Antony Andrus, antonyandrus@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/_main.css">
+    <link rel="stylesheet" href="./assets/styles/_media.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <img src="./assets/images/andrus_prof_initial.png" />
+            <ul class="sub-header">
+                <a href="#about">About</a>
+                <a href="#about">Skills</a>
+                <a href="#about">Experience</a>
+                <a href="#about">Projects</a>
+                <a href="#about">Education</a>
+            </ul>
+            <button>Github Profile</button>
+        </div>
+        <div class="mobile-header">
+            <img src="./assets/images/andrus_prof_initial.png" />
+            <div id="menuToggle" class="burger-menu">
+                <input type="checkbox" id="menuCheckbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- <div class="menu-list">
+
+                </div>
+                <ul id="menu" class="menu">
+                    <li>
+                        <a href="#">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+                        </a>
+                    </li>
+                    <li><label for="menuCheckbox"><a>Info</a></label></li>
+                    <li><label for="menuCheckbox"><a>Contact</a></label></li>
+                    <li>
+                        <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="profile">
+                <div class="content">
+                    <div class="name">
+                        <span style="font-weight: 500; font-size: 1.8rem;">Hi, I am</span>
+                        <br />
+                        Antony Andrus
+                    </div>
+                    <div class="designation">
+                        I am a Full Stack Developer
+                    </div>
+                    <div class="intro">
+                        Full Stack Developer with extensive experience in building scalable,
+                        high-performance web applications using modern frameworks and technologies. Skilled in
+                        developing dynamic, responsive, and user-friendly interfaces with Angular 20 and React, and
+                        creating robust backend services using Express.js and Node.js. Proficient in implementing secure
+                        authentication strategies, including
+                        OAuth 2.0 and JWT, and delivering optimized, maintainable code for large-scale projects.
+                    </div>
+                    <a href="https://www.linkedin.com/in/antony-andrus/" target="display"
+                        class="linkedin-connect">Connect with Me</a>
+                    <div class="social-websites">
+                        <a href="https://www.linkedin.com/in/antony-andrus/" target="_blank"
+                            class="sc-ivTmOn fOdEsf text-blue-500 hover:bg-blue-100 hover:text-blue-500">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/antonyandrews" target="_blank"
+                            class="sc-ivTmOn fOdEsf text-gray-700 hover:bg-gray-100 hover:text-gray-700">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/antony_andrus" target="_blank"
+                            class="sc-ivTmOn fOdEsf text-blue-400 hover:bg-blue-100 hover:text-blue-400">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/prof_img.jpg" alt="hero-image" class="content">
+                </div>
+            </div>
+        </div>
+        <div class="skill-experiences">
+            <div id="skills" class="skill-list">
+                <div class="content">
+                    <div class="header">
+                        Skills
+                    </div>
+                    <div class="info">
+                        Here are some of my skills on which I have been working on for the past 9 years.
+                    </div>
+                    <div class="skill-boxes">
+                        <div class="box">
+                            <h2 class="box-header">Frontend</h2>
+                            <div class="box-contents">
+                                <div class="content">
+                                    <img src="./assets/images/angular_gradient.png">
+                                    Angular
+                                </div>
+                                <div class="content">
+                                    <img src="./assets/images/Rx_Logo-512-512.png">
+                                    RxJS
+                                </div>
+                                <div class="content">
+                                    <img
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K">
+                                    React
+                                </div>
+                                <div class="content">
+                                    <img
+                                        src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg">
+                                    Redux
+                                </div>
+                                <div class="content">
+                                    <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png">
+                                    HTML
+                                </div>
+                                <div class="content">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png">
+                                    CSS
+                                </div>
+                                <div class="content">
+                                    <img
+                                        src="data:image/png;base64,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">
+                                    Material UI
+                                </div>
+                                <div class="content">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png">
+                                    Javascript
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h2 class="box-header">Backend</h2>
+                            <div class="box-contents">
+                                <div class="content">
+                                    <img src="./assets//images/nodejs-icon.svg" />
+                                    Node.js
+                                </div>
+                                <div class="content">
+                                    <img src="./assets//images/express-js.png" />
+                                    express
+                                </div>
+                                <div class="content">
+                                    <img src="./assets/images/Mongodb.png" />
+                                    MongoDB
+                                </div>
+                                <div class="content">
+                                    <img src="./assets/images/Laravel-logo.png" />
+                                    Laravel
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h2 class="box-header">Others</h2>
+                            <div class="box-contents">
+                                <div class="content">
+                                    <img src="./assets//images/Git-Icon-1788C.png" />
+                                    Git
+                                </div>
+                                <div class="content">
+                                    <img src="./assets//images/github-mark.png" />
+                                    GitHub
+                                </div>
+                                <div class="content">
+                                    <img src="./assets//images/vscode-stable.png" />
+                                    vscode
+                                </div>
+                                <div class="content">
+                                    <img src="./assets//images/postman-logo-icon-orange.svg" />
+                                    Postman
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experience" class="experience-list">
+                <div class="content">
+                    <div class="header">
+                        Experience
+                    </div>
+                    <div class="info">
+                        My work experience as a Full Stack Developer and working on different companies and projects.
+                    </div>
+                    <div class="experience-boxes">
+                        <ul class="experiences">
+                            <li class="experience">
+                                <div class="ruler">
+                                    <span class="start"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <div class="header">
+                                            <img src="./assets/images/si-logo.png" />
+                                            <div class="company">
+                                                <div class="designation">
+                                                    Assosiate Technical Lead
+                                                </div>
+                                                <div class="name">
+                                                    S.i. IT Consultancy service (INDIA) Pvt Ltd
+                                                </div>
+                                                <div class="years">
+                                                    Feb 2022 - Aug 2025
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="responsibility">
+                                            <span class="role">
+                                                As a frontend developer at Divine Infotech, I’ve built various projects
+                                                both collaboratively and independently. I specialize in crafting
+                                                intuitive and responsive web interfaces, bringing ideas to life through
+                                                clean, efficient code.
+                                            </span>
+                                            <br />
+                                            <div class="skills">
+                                                <b>Skills:</b>
+                                                <div class="list">
+                                                    <div class="items">
+                                                        Angular
+                                                    </div>
+                                                    <div class="items">
+                                                        Nodejs
+                                                    </div>
+                                                    <div class="items">
+                                                        Primeng
+                                                    </div>
+                                                    <div class="items">
+                                                        Azure Repo
+                                                    </div>
+                                                    <div class="items">
+                                                        MongoDB
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="experience">
+                                <div class="ruler">
+                                    <span class="start"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <div class="header">
+                                            <img src="./assets/images/ideas2it-logo.svg" />
+                                            <div class="company">
+                                                <div class="designation">
+                                                    Senior Software Engineer
+                                                </div>
+                                                <div class="name">
+                                                    Ideas2It Technology Services Pvt Ltd
+                                                </div>
+                                                <div class="years">
+                                                    Jul 2016 - Feb 2025
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="responsibility">
+                                            <span class="role">
+                                                As a frontend developer at Divine Infotech, I’ve built various projects
+                                                both collaboratively and independently. I specialize in crafting
+                                                intuitive and responsive web interfaces, bringing ideas to life through
+                                                clean, efficient code.
+                                            </span>
+                                            <br />
+                                            <div class="skills">
+                                                <b>Skills:</b>
+                                                <div class="list">
+                                                    <div class="items">
+                                                        Angular
+                                                    </div>
+                                                    <div class="items">
+                                                        Laravel
+                                                    </div>
+                                                    <div class="items">
+                                                        Primeng
+                                                    </div>
+                                                    <div class="items">
+                                                        Azure Repo
+                                                    </div>
+                                                    <div class="items">
+                                                        Quickbooks
+                                                    </div>
+                                                    <div class="items">
+                                                        Stripe
+                                                    </div>
+                                                    <div class="items">
+                                                        MySql
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="projects-container">
+            <div class="box">
+                <div class="header">
+                    Projects
+                </div>
+                <div class="info">
+                    I have worked on a wide range of projects. From web apps to android apps. Here are some of my
+                    projects.
+                </div>
+                <div class="project-boxes">
+                    <div class="project">
+                        <img src="./assets/images/nudges.jpeg" />
+                        <div class="details">
+                            <div class="title">
+                                AAA Nudges
+                            </div>
+                            <div class="timeline">
+                                Jan 2025
+                            </div>
+                            <div class="description">
+                                Task management app specially designed using styled components and used hooks concepts
+                                for state management.
+                            </div>
+                        </div>
+                        <!-- <div class="contributors">
+                            <img src="./assets/images/andrus_prof_initial.png">
+                        </div> -->
+                    </div>
+                    <div class="project">
+                        <img src="./assets/images/aaa-mart.jpeg" />
+                        <div class="details">
+                            <div class="title">
+                                AAA Mart
+                            </div>
+                            <div class="timeline">
+                                Mar 2025 - Ongoing
+                            </div>
+                            <div class="description">
+                                E-commerce platform to list, choose, buy product through secure payment gateway.
+                                Implemented using mordern tech stack to represent secure means of data.
+                            </div>
+                        </div>
+                        <!-- <div class="contributors">
+                            <img src="./assets/images/andrus_prof_initial.png">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education-contact">
+            <div id="education" class="education-list">
+                <div class="container">
+                    <div class="title">
+                        Education
+                    </div>
+                    <div class="description">
+                        My education has been a journey of self-discovery and growth. My educational details are as
+                        follows.
+                    </div>
+                    <div class="listings">
+                        <ul class="list">
+                            <li class="item">
+                                <div class="content">
+                                    <div class="box">
+                                        <div class="college">
+                                            <div class="details">
+                                                <img src="./assets/images/chennai-cit-logo.svg">
+                                                <div class="name">
+                                                    <div class="title">
+                                                        Chennai Institute of Technology
+                                                    </div>
+                                                    <div class="course">
+                                                        Bachelor of Engineering - Computer Science
+                                                    </div>
+                                                    <div class="years">
+                                                        August 2012 - May 2016
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grade">
+                                                <b>CGPA: </b> 6.9
+                                            </div>
+                                            <div class="desc">
+                                                <span class="desc-content">
+                                                    Studied in best college where I got connected with wonderful
+                                                    lecturers who helped me to pass with flying colors. They had a
+                                                    skilled placement team who helped me to get placed in Virtusa.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ruler">
+                                    <span class="line"></span>
+                                    <span class="start"></span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="content">
+                                    <div class="box">
+                                        <div class="college">
+                                            <div class="details">
+                                                <img src="./assets/images/education-dummy.png">
+                                                <div class="name">
+                                                    <div class="title">
+                                                        Sivanthi Matriculation Higher Secondary School
+                                                    </div>
+                                                    <div class="course">
+                                                        XII
+                                                    </div>
+                                                    <div class="years">
+                                                        June 2010 - April 2012
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grade">
+                                                <b>Percentage: </b> 70%
+                                            </div>
+                                            <div class="desc">
+                                                <span class="desc-content">
+                                                    Studied in best college where I got connected with wonderful
+                                                    lecturers who helped me to pass with flying colors. They had a
+                                                    skilled placement team who helped me to get placed in Virtusa.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ruler">
+                                    <span class="line"></span>
+                                    <span class="start"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer class="footer-container">
+                <h1 class="footer-header">Connect with me!!</h1>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/antony-andrus/" target="_blank"
+                        class="sc-ivTmOn fOdEsf text-blue-500 hover:bg-blue-100 hover:text-blue-500">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/antonyandrews" target="_blank"
+                        class="sc-ivTmOn fOdEsf text-gray-700 hover:bg-gray-100 hover:text-gray-700">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/antony_andrus" target="_blank"
+                        class="sc-ivTmOn fOdEsf text-blue-400 hover:bg-blue-100 hover:text-blue-400">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <p>© 2025 Antony Andrus. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
