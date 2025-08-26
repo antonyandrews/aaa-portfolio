@@ -159,6 +159,10 @@ video {
     margin-top: 30px;
 }
 
+.layout .about .profile .content .social-websites img {
+    width: 1rem;
+}
+
 .layout .about .profile .content a {
     color: #005BAC;
     font-size: 28px;
@@ -849,6 +853,7 @@ video {
 .layout .footer .footer-container .social-links {
     display: flex;
     margin-top: 1rem;
+    align-items: center;
 }
 
 .layout .footer .footer-container .social-links a {
@@ -863,4 +868,8 @@ video {
     margin-top: 1.5rem;
     font-size: 0.9rem;
     text-align: center;
+}
+
+.layout .footer .footer-container .social-links img {
+    width: 1rem;
 }
