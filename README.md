@@ -21,7 +21,7 @@ Welcome to my Personal Portfolio Website! This project showcases my skills, proj
  ## Connect with me
      	•	LinkedIn: https://www.linkedin.com/in/antony-andrus/
 	    •	Medium: https://medium.com/@antonyandrus
-	    •	Twitter: https://medium.com/@antonyandrus
+	    •	Twitter: https://x.com/antony_andrus
 
 
 
