@@ -59,7 +59,7 @@
     }
 
     .layout .mobile-header .menu-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 
@@ -118,6 +118,11 @@
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    .layout .mobile-header img {
+        width: 2rem;
+        height: 2rem;
     }
 
     .layout .about .profile .image .content {

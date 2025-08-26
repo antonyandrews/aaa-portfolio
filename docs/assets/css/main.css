@@ -50,9 +50,11 @@ video {
     display: flex;
     gap: 1;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
     padding: 1rem;
-    z-index: 10;
+    width: 100%;
+    z-index: 9;
+    background-color: #ffffff;
 }
 
 .layout .top-header img {
