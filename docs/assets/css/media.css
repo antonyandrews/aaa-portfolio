@@ -21,7 +21,7 @@
         border-radius: 0.5rem;
     }
 
-    .layout .header .sub-header {
+    .layout .top-header .sub-header {
         gap: 2rem;
     }
 
@@ -49,7 +49,7 @@
 }
 
 @media screen and (max-width: 640px) {
-    .layout .header {
+    .layout .top-header {
         display: none;
     }
 
@@ -58,117 +58,66 @@
         justify-content: space-between;
     }
 
-    .layout .mobile-header .burger-menu {
-        display: block;
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-
-    .layout .mobile-header .burger-menu input {
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0;
-        z-index: 2;
-        -webkit-touch-callout: none;
-    }
-
-    .layout .mobile-header .burger-menu span {
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-
-        background: #cdcdcd;
-        border-radius: 3px;
-
-        z-index: 1;
-
-        transform-origin: 4px 0px;
-
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            opacity 0.55s ease;
-    }
-
-    .layout .mobile-header .burger-menu span:first-child {
-        transform-origin: 0% 0%;
-    }
-
-    .layout .mobile-header .burger-menu span:nth-last-child(2) {
-        transform-origin: 0% 100%;
-    }
-
-    /* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-    .layout .mobile-header .burger-menu input:checked~span {
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: #232323;
-    }
-
-    /*
- * But let's hide the middle one.
- */
-    .layout .mobile-header .burger-menu input:checked~span:nth-last-child(3) {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-    }
-
-    /*
- * Ohyeah and the last one should go the other direction
- */
-    .layout .mobile-header .burger-menu input:checked~span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
-    }
-
-    /*
- * Make this absolute positioned
- * at the top left of the screen
- */
-    .layout .mobile-header .burger-menu .menu {
-        position: absolute;
-        max-width: 400px;
-        width: 100vw;
-        max-height: 100vh;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
-        box-sizing: border-box;
-        overflow-y: auto;
-        background: #ededed;
-        list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        /* to stop flickering of text in safari */
-
-        transform-origin: 0% 0%;
-        transform: translate(45%, 0);
-
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    }
-
-    .layout .mobile-header .burger-menu .menu li {
-        padding: 10px 0;
-        font-size: 22px;
-    }
-
-    .layout .mobile-header .burger-menu .menu li label {
+    .layout .mobile-header .menu-icon {
+        font-size: 2rem;
         cursor: pointer;
     }
 
-    /*
- * And let's slide it in from the left
- */
-    .layout .mobile-header .burger-menu input:checked~ul {
-        transform: none;
+    .layout .mobile-header .menu-card {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+    .layout .mobile-header .menu-card a {
+        padding: 1rem;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+    }
+
+    .layout .mobile-header .menu-card button {
+        color: #005BAC;
+        padding: 10px 20px;
+        border: 1px solid #005BAC;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 1.5rem;
+    }
+
+    .layout .mobile-header .menu-card a:hover {
+        background: #f0f0f0;
+    }
+
+    .layout .mobile-header .menu-card.open {
+        display: flex;
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .layout .about .profile .image .content {
@@ -184,9 +133,105 @@
 
     .layout .about .profile .content .designation {
         font-size: 22px;
+        line-height: 48px;
+        margin-bottom: 16px;
     }
 
     .layout .about .profile .content .intro {
         font-size: 16px;
+    }
+
+    .layout .skill-experiences .skill-list .content .header {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+
+    .layout .skill-experiences .skill-list .content .info {
+        font-size: 16px;
+    }
+
+    .layout .skill-experiences .experience-list .content .info {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    .layout .skill-experiences .skill-list .content .skill-boxes .box {
+        max-width: 330px;
+        padding: 10px 36px;
+    }
+
+    .layout .skill-experiences .skill-list .content .skill-boxes .box .box-contents .content {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .layout .skill-experiences .experience-list .content .experiences .experience .content {
+        padding: 10px;
+        gap: 8px;
+        width: 300px;
+    }
+
+    .layout .skill-experiences .experience-list .content .experiences .experience .content .header .company .designation {
+        font-size: 14px;
+    }
+
+    .layout .skill-experiences .experience-list .content .experiences .experience .content .header .company .name {
+        font-size: 12px;
+    }
+
+    .layout .skill-experiences .experience-list .content .experiences .experience .content .header .company .years {
+        font-size: 10px;
+    }
+
+    .layout .skill-experiences .experience-list .content .experiences .experience .content .responsibility {
+        font-size: 12px;
+    }
+
+    .layout .skill-experiences .experience-list .content .experiences .experience .content .responsibility .skills .list .items {
+        font-size: 12px;
+    }
+
+    .layout .projects-container .box .header {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+
+    .layout .projects-container .box .info {
+        font-size: 16px;
+    }
+
+    .layout .education-contact .education-list .container .title {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+
+    .layout .education-contact .education-list .container .description {
+        font-size: 16px;
+    }
+
+    .layout .education-contact .education-list .container .listings .list .item .content .box .college {
+        padding: 10px;
+        gap: 8px;
+        width: 300px;
+    }
+
+    .layout .education-contact .education-list .container .listings .list .item .content .box .college .details .name .title {
+        font-size: 14px;
+    }
+
+    .layout .education-contact .education-list .container .listings .list .item .content .box .college .details .name .course {
+        font-size: 12px;
+    }
+
+    .layout .education-contact .education-list .container .listings .list .item .content .box .college .details .name .years {
+        font-size: 10px;
+    }
+
+    .layout .education-contact .education-list .container .listings .list .item .content .box .college .grade {
+        font-size: 12px;
+    }
+
+    .layout .education-contact .education-list .container .listings .list .item .content .box .college .desc {
+        font-size: 12px;
     }
 }

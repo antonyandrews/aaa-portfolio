@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Antony Andrus</title>
     <base href="/aaa-portfolio/">
     <meta name='target' content='all'>
     <meta name='rating' content='General'>
@@ -20,48 +21,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/andrus_prof_initial.png">
 </head>
 
 <body>
     <div class="layout">
-        <div class="header">
+        <div class="top-header">
             <img src="./assets/images/andrus_prof_initial.png" />
             <ul class="sub-header">
                 <a href="#about">About</a>
-                <a href="#about">Skills</a>
-                <a href="#about">Experience</a>
-                <a href="#about">Projects</a>
-                <a href="#about">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
             </ul>
-            <button>Github Profile</button>
+            <button onclick="window.open('https://github.com/antonyandrews', '_blank')">Github Profile</button>
         </div>
         <div class="mobile-header">
             <img src="./assets/images/andrus_prof_initial.png" />
-            <div id="menuToggle" class="burger-menu">
-                <input type="checkbox" id="menuCheckbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <!-- <div class="menu-list">
-
-                </div>
-                <ul id="menu" class="menu">
-                    <li>
-                        <a href="#">
-                            <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
-                        </a>
-                    </li>
-                    <li><label for="menuCheckbox"><a>Info</a></label></li>
-                    <li><label for="menuCheckbox"><a>Contact</a></label></li>
-                    <li>
-                        <a href="https://erikterwan.com/" target="_blank">Show me more</a>
-                    </li>
-                </ul> -->
+            <div class="menu-icon" id="menu-icon">
+                ☰
+            </div>
+            <div class="menu-card" id="menu-card">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="https://github.com/antonyandrews" target="_blank">Github Profile</a>
             </div>
         </div>
         <div id="about" class="about">
@@ -241,7 +228,7 @@
                                                     Assosiate Technical Lead
                                                 </div>
                                                 <div class="name">
-                                                    S.i. IT Consultancy service (INDIA) Pvt Ltd
+                                                    S.i. Systems
                                                 </div>
                                                 <div class="years">
                                                     Feb 2022 - Aug 2025
@@ -518,6 +505,14 @@
             </footer>
         </div>
     </div>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const menuCard = document.getElementById('menu-card');
+
+        menuIcon.addEventListener('click', () => {
+            menuCard.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>

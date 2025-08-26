@@ -5,9 +5,10 @@
     padding: 0;
 }
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 audio,
@@ -34,24 +35,33 @@ video {
     max-width: 100%;
 }
 
-.layout {
+.layout .top-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    position: fixed;
     padding: 1rem;
+    width: 100%;
+    z-index: 9;
+    background-color: #ffffff;
 }
 
-.layout .header {
+.layout .mobile-header {
     display: flex;
     gap: 1;
     justify-content: space-around;
     position: sticky;
+    padding: 1rem;
+    z-index: 10;
 }
 
-.layout .header img {
+.layout .top-header img {
     width: 3rem;
     height: 3rem;
     border-radius: 0.5rem;
 }
 
-.layout .header .sub-header {
+.layout .top-header .sub-header {
     padding: 0;
     display: flex;
     gap: 4rem;
@@ -59,12 +69,12 @@ video {
     justify-content: space-evenly;
 }
 
-.layout .header .sub-header a {
+.layout .top-header .sub-header a {
     text-decoration: none;
     color: #005BAC;
 }
 
-.layout .header button {
+.layout .top-header button {
     color: #005BAC;
     padding: 10px 20px;
     border: 1px solid #005BAC;
